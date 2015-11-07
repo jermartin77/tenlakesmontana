@@ -492,10 +492,10 @@ h1 {
   }
 }
 .gallery-thumb-link img {
-  -webkit-transition: -webkit-transform 0.25s ease-out;
-  transition: -webkit-transform 0.25s ease-out;
-  transition: transform 0.25s ease-out;
-  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+  -webkit-transition: -webkit-transform 0.45s ease-out;
+  transition: -webkit-transform 0.45s ease-out;
+  transition: transform 0.45s ease-out;
+  transition: transform 0.45s ease-out, -webkit-transform 0.45s ease-out;
 }
 .gallery-thumb-link:hover img {
   -webkit-transform: scale3d(1.05, 1.05, 1.05);
