@@ -1,0 +1,4 @@
+
+$(function(){
+  $('#griderly').griderly();
+});

@@ -1,0 +1,16 @@
+{
+  "name": "tenlakesmontana",
+  "description": "tenlakesmontana bower build setup",
+  "version": "1.0",
+  "dependencies": {
+    "jquery-1.10.2": "https://github.com/components/jquery/archive/1.10.2.tar.gz",
+    "jquery-2.1.0": "https://github.com/components/jquery/archive/2.1.0.tar.gz",
+    "jquery-throttle-debounce": "",
+    "bootstrap": "3.3.5",
+    "fastclick": "1.0.6",
+    "scrolltoid": "*",
+    "modal-extras" : "*",    
+    "waypoints":"4.0.0"
+    },
+  "engine": "node >= 0.10"
+}
