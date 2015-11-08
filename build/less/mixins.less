@@ -1,5 +1,5 @@
 .loading(@size: 2em, @border: 3px, @color: #ccc, @opacity: 70%) {
-    cursor: wait;
+    //cursor: wait;
     position: relative;
     &:after {
         content: '';
@@ -20,6 +20,29 @@
         margin-left: ((@size/2)*-1);
     }
 }
+
+
+.button(@size: @button-size){
+    transition: background .25s ease-out;
+    &:hover {
+        background: fadein(@color-bg-fade, 10%);
+    }
+
+
+
+    cursor: pointer;
+    width: @size * .8;
+    height: @size * .8;
+    border-radius: @size * .8;
+    background: @color-bg-fade;
+    font-size: 0;
+    @media (min-width: @screen-sm) {
+        width: @size;
+        height: @size;
+        border-radius: @size;
+    }
+}
+
 // Opacity
 
 .opacity(@opacity) {

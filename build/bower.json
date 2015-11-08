@@ -10,7 +10,9 @@
     "fastclick": "1.0.6",
     "scrolltoid": "*",
     "modal-extras" : "*",    
-    "waypoints":"4.0.0"
+    "waypoints":"4.0.0",
+    "hammerjs":"*",
+    "interact": "1.2.6"
     },
   "engine": "node >= 0.10"
 }

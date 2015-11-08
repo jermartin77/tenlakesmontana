@@ -12,19 +12,19 @@ module.exports = function(grunt) {
         separator : ';'
       },
       core : {
-        
+
         src : [
 
           // Start with Modernizr
           'js/vendor/modernizr-custom.js',
-
           'bower_components/bootstrap/js/modal.js',
+          'bower_components/interact/dist/interact.js',
           'bower_components/scrolltoid/scrolltoid.js',
           'bower_components/modal-extras/js/modal-extras.js',
           'bower_components/waypoints/lib/jquery.waypoints.js',
           'js/griderly.js',
           'js/script.js'
-        ],
+          ],
         // Moved this to an external work location so that someone doesn't work on this file.
         dest : '../js/script.js'
       }
@@ -114,17 +114,17 @@ module.exports = function(grunt) {
         processors: [
           require('pixrem')(), // add fallbacks for rem units
           require('autoprefixer')({browsers: '> 1%'}) // add vendor prefixes
-        ]
-      },
-       multiple_files: {
-        expand: true,
-        flatten: true,
+          ]
+        },
+        multiple_files: {
+          expand: true,
+          flatten: true,
         src: '../css/*.css', // -> src/css/file1.css, src/css/file2.css 
         dest: '../css/' // -> dest/css/file1.css, dest/css/file2.css 
       }
     },
 
-        
+
     // If any of these files change, touch off another build.
     watch : {           
       "set1js" : {
@@ -151,7 +151,7 @@ module.exports = function(grunt) {
       }
     }    
   });
-  
+
   // NOTE: grunt.loadNpmTasks() not needed since we are using a JIT (just-in-time) loader for grunt plugins
   //grunt.loadNpmTasks('grunt-svgmin');
 
