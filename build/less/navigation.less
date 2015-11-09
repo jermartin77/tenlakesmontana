@@ -1,7 +1,19 @@
 .navigation {
-
+ background: @color-bg;
 }
-.navigation ul {
+.navigation-list {
+  list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: space-around;
 }
+
+.navigation-link {
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: @font-family-sans;
+  padding: .5em;
+}
+

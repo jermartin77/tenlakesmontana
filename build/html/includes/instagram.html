@@ -1,0 +1,17 @@
+<section id="social-gallery" class="content-section">
+  <h2>instagram</h2>
+  <div class="thumbnail-container">
+    <!--(bake-start _foreach="data:data")-->
+    <a href="{{data.link}}" class="thumbnail-link">
+      <img src="{{data.images.low_resolution.url}}" alt="{{data.caption.text}}}"  title="{{data.caption.text}}}">
+      <span class-="thumbnail-caption-wrapper">
+        <span class="thumbnail-caption">
+          <span class="thumbnail-comments">{{data.comments.count}}</span>
+          <span class="thumbnail-likes">{{data.likes.count}}</span>
+          <span class="thumbnail-user">{{data.user.username}}</span>
+        </span>
+      </span>
+    </a>
+    <!--(bake-end)-->
+  </div>
+</section>

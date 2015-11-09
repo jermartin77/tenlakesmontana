@@ -16,7 +16,7 @@ textarea {
 }
 
 body {
-  
+
   font-family: @font-family-serif;
   overflow-x: hidden;
   color: @color-text;
@@ -42,25 +42,50 @@ h6 {
   font-family: @font-family-sans;
 }
 
+h2 {
+  font-size: 1.8rem;
+  @media (min-width: @screen-sm) {
+    font-size: 2.3rem;
+  }
+  @media (min-width: @screen-md) {
+    font-size: 2.8rem;
+  }
+  
+}
+
+h3 {
+  font-size: 1.2rem;
+  // @media (min-width: @screen-sm) {
+  //   font-size: 2.3rem;
+  // }
+  @media (min-width: @screen-lg) {
+    font-size: 1.4rem;
+  }
+}
+
 dl {
   font-family: @font-family-sans;
   display: flex;
   flex-wrap: wrap;
   font-size: 0.875rem;
+}
 
+dt, dl {
+  width: 50%;
+  @media (min-width: @screen-sm) and (max-width: @screen-md) {
+    width: 100%;
+  }
 }
 
 dt {
   font-weight: 700;
   text-transform: uppercase;
-  width: 50%;
   margin: 0;
 }
 
 dd {
-   width: 50%;
-   margin: 0;
-  
+ margin: 0;
+
 }
 
 .section-header {
@@ -84,4 +109,5 @@ dd {
 .content-section {
   padding-top: 4vw;
   padding-bottom: 4vw;
+  background: @color-bg;
 }

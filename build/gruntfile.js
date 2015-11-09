@@ -7,6 +7,29 @@ module.exports = function(grunt) {
     pkg : grunt.file.readJSON('package.json'),
     
     
+    bake: {
+      options: {
+        content: 'data/instagram.json'
+        //,
+        //section: 'data'
+      },
+      build: {
+        files: {
+          "../index.html": "html/layout.html"
+        }
+      }
+    },
+
+
+    http: {
+      getJSON: {
+        options: {
+          url: 'https://api.instagram.com/v1/tags/endangeredsingletrack/media/recent?client_id=56ff4ea444af496a97e5618b696a8644&count=12'
+        },
+        dest: 'data/instagram.json'
+      }
+    },
+
     concat : {
       options : {
         separator : ';'
@@ -127,40 +150,50 @@ module.exports = function(grunt) {
 
     // If any of these files change, touch off another build.
     watch : {           
-      "set1js" : {
+      "js" : {
         files : ['js/**/*.js'],
         tasks : ['newer:concat'],
         options : {
           livereload : true
         }
       },
-      "set2less" : {
+      "less" : {
         files : ['less/*.less', 'less/**/*.less'],
         tasks : ['less:development', 'postcss'],
         options : {
           livereload : true
         }
-      }
-      ,
-      "set2html" : {
-        files : ['../index.html'],
-        //tasks : ['less:development', 'postcss'],
+      },
+      bake: {
+        files : ['html/**'],
+        tasks: "bake:build",
         options : {
           livereload : true
         }
       }
+      // ,
+      // "set2html" : {
+      //   files : ['../index.html'],
+      //   //tasks : ['less:development', 'postcss'],
+      //   options : {
+      //     livereload : true
+      //   }
+      // }
     }    
   });
 
+
+
+  //grunt.loadNpmTasks( "grunt-bake" );
   // NOTE: grunt.loadNpmTasks() not needed since we are using a JIT (just-in-time) loader for grunt plugins
   //grunt.loadNpmTasks('grunt-svgmin');
 
   // special build options   
-  grunt.option('force', true);  // Don't fail on JShint warnings for now.
-
+  //grunt.option('force', true);  // Don't fail on JShint warnings for now.
   // build tasks that build to production will use (runs all minification, uglifications, etc.) 
 
-  grunt.registerTask('default', ['less:development', 'postcss', 'concat',  'watch']);
+  grunt.registerTask('default', ['bake:build', 'less:development', 'postcss', 'concat',  'watch']);
+  grunt.registerTask('remote', ['http', 'default']);
   grunt.registerTask('deploy', ['bower', 'less:production', 'postcss', 'concat', 'uglify']);
 
 };
