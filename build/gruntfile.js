@@ -43,6 +43,7 @@ module.exports = function(grunt) {
           'bower_components/bootstrap/js/modal.js',
           'bower_components/interact/dist/interact.js',
           'bower_components/scrolltoid/scrolltoid.js',
+          'bower_components/sticky-kit/jquery.sticky-kit.js',
           'bower_components/modal-extras/js/modal-extras.js',
           'bower_components/waypoints/lib/jquery.waypoints.js',
           'js/griderly.js',

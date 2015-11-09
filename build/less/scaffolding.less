@@ -88,6 +88,23 @@ dd {
 
 }
 
+.btn {
+  text-transform: uppercase;
+  background: @color-link;
+  color: @color-dark;
+  font-family: @font-family-sans;
+  text-decoration: none;
+  padding: .8em 1.2em;
+  display: inline-block;
+
+  &:hover {
+    text-decoration: none;
+    color: @color-dark;
+    background: lighten(@color-link, 10%)
+  }
+
+}
+
 .section-header {
   text-align: center;
 }

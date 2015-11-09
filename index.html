@@ -8,7 +8,7 @@
   <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <section class="section-banner">
+  <section id="banner" class="section-banner">
     <header class="banner-header">
       <h1 class="banner-title"><span>Ten Lakes</span> <small>Montana</small></h1>
       <p class="banner-subtitle">Mountain biking Montana's endangered singletrack.  </p>
@@ -19,16 +19,16 @@
     <nav id="navigation" class="navigation">
       <ul class="navigation-list container">
         <li class="navigation-list-item">
-          <a href="#gallery" class="navigation-link">Intro</a>
+          <a href="#banner" class="navigation-link">Intro</a>
         </li>
         <li class="navigation-list-item">
           <a href="#gallery" class="navigation-link">Gallery</a>
         </li>
         <li class="navigation-list-item">
-          <a href="#gallery" class="navigation-link">Routes</a>
+          <a href="#routes" class="navigation-link">Routes</a>
         </li>
         <li class="navigation-list-item">
-          <a href="#gallery" class="navigation-link">Maps</a>
+          <a href="#map" class="navigation-link">Map</a>
         </li>
       </ul>
     </nav>
@@ -96,6 +96,7 @@
           <p>
             Phasellus tempus lacinia efficitur. Curabitur id maximus risus. Cras congue at mi et ornare. Suspendisse vulputate pharetra lectus, ac malesuada nibh tempus sit amet.
           </p>
+          
         </div>
     
         <div class="route-column">
@@ -129,56 +130,67 @@
         </div>
       </div>
     </section>
+    
+    <section id="map" class="section-map content-section">
+      <h2>Area Map</h2>
+      <!-- TRAILFORKS WIDGET START -->
+      <div class="TrailforksWidgetMap" data-w="800px" data-h="600px" data-rid="9279" data-maptype="terrain" data-trailstyle="difficulty" data-controls="1" data-list="0" data-dml="1" data-layers="labels,poi,directory,region" data-z="11" data-lat="48.9447984" data-lon="-114.9041314"></div>
+      <!-- <a href="http://www.trailforks.com/region/ten-lakes-scenic-recreation-area/">Ten Lakes Scenic Recreation Area</a> on <a href="http://www.trailforks.com/">Trailforks.com</a> -->
+      <script>
+        var script = document.createElement("script"); script.setAttribute("src", "//es.pinkbike.org/ttl-86400/sprt/j/trailforks/widget.js"); document.getElementsByTagName("head")[0].appendChild(script); var widgetCheck = false;
+      </script>
+      <a href="http://www.trailforks.com/region/ten-lakes-scenic-recreation-area/" class="btn">View More on Trailforks</a>
+    </section>
     <section id="social-gallery" class="content-section">
       <h2>instagram</h2>
       <div class="thumbnail-container">
-        <a href="https://instagram.com/p/9uKyKhorPB/" class="thumbnail-link">
+        <a href="https://scontent.cdninstagram.com/hphotos-xfp1/t51.2885-15/s640x640/sh0.08/e35/11820628_747179682050078_1672499551_n.jpg" class="thumbnail-link" data-toggle="modal-image">
           <img src="https://scontent.cdninstagram.com/hphotos-xfp1/t51.2885-15/s320x320/e35/11820628_747179682050078_1672499551_n.jpg" alt="#tbt to riding some #endangeredsingletrack with @lady_loam in the #henrylakemountains. Unfortunately much of this area is proposed Wilderness and may not be available to #mountainbikes in the near future. Support the #sustainabletrailscoalition in their efforts to keep these #backcountry #epics open.}"  title="#tbt to riding some #endangeredsingletrack with @lady_loam in the #henrylakemountains. Unfortunately much of this area is proposed Wilderness and may not be available to #mountainbikes in the near future. Support the #sustainabletrailscoalition in their efforts to keep these #backcountry #epics open.}">
-          <span class-="thumbnail-caption-wrapper">
+          <span class="thumbnail-caption-wrapper">
             <span class="thumbnail-caption">
-              <span class="thumbnail-comments">3</span>
-              <span class="thumbnail-likes">16</span>
-              <span class="thumbnail-user">fakelukeanderson</span>
+              <span class="thumbnail-likes"><span class="icon-heart"></span><span class="thumbnail-label">16</span></span>
+              <span class="thumbnail-comments"><span class="icon-chat"></span><span class="thumbnail-label">3</span></span>
+              <span class="thumbnail-user">@fakelukeanderson</span>
             </span>
           </span>
         </a>
-        <a href="https://instagram.com/p/84S23bREPY/" class="thumbnail-link">
+        <a href="https://scontent.cdninstagram.com/hphotos-xfp1/t51.2885-15/s640x640/sh0.08/e35/11326230_1645209162429583_1146389598_n.jpg" class="thumbnail-link" data-toggle="modal-image">
           <img src="https://scontent.cdninstagram.com/hphotos-xfp1/t51.2885-15/s320x320/e35/11326230_1645209162429583_1146389598_n.jpg" alt="I love fall riding on remote backcountry trails in the high country. Let's hope the Forest Service lets us continue to access these challenging and wonderful trails on bicycles. #tbt to last Saturday. 
 #10LakesMontana #endangeredsingletrack #sustainabletrailscoalition #wildernessculture #bikesbelong #montanamoment #whitefishrange #vsco #vscocam #flatheadfattires #flatheadphotography #mtb #montanawinseverytime #campvibes #cyclingcameraclub #outsideisfree #neverstopexploring #adventure}"  title="I love fall riding on remote backcountry trails in the high country. Let's hope the Forest Service lets us continue to access these challenging and wonderful trails on bicycles. #tbt to last Saturday. 
 #10LakesMontana #endangeredsingletrack #sustainabletrailscoalition #wildernessculture #bikesbelong #montanamoment #whitefishrange #vsco #vscocam #flatheadfattires #flatheadphotography #mtb #montanawinseverytime #campvibes #cyclingcameraclub #outsideisfree #neverstopexploring #adventure}">
-          <span class-="thumbnail-caption-wrapper">
+          <span class="thumbnail-caption-wrapper">
             <span class="thumbnail-caption">
-              <span class="thumbnail-comments">3</span>
-              <span class="thumbnail-likes">52</span>
-              <span class="thumbnail-user">marc_obrien</span>
+              <span class="thumbnail-likes"><span class="icon-heart"></span><span class="thumbnail-label">52</span></span>
+              <span class="thumbnail-comments"><span class="icon-chat"></span><span class="thumbnail-label">3</span></span>
+              <span class="thumbnail-user">@marc_obrien</span>
             </span>
           </span>
         </a>
-        <a href="https://instagram.com/p/8zUHP6REEQ/" class="thumbnail-link">
+        <a href="https://scontent.cdninstagram.com/hphotos-xtf1/t51.2885-15/s640x640/sh0.08/e35/11410728_1703567176539234_1756403163_n.jpg" class="thumbnail-link" data-toggle="modal-image">
           <img src="https://scontent.cdninstagram.com/hphotos-xtf1/t51.2885-15/s320x320/e35/11410728_1703567176539234_1756403163_n.jpg" alt="Riding bikes on big backcountry trails over several passes in a day. 
 #exploremontana #bikerides #outsideisfree #evoexplores  #endangeredsingletrack #wildernessculture #rideitnow}"  title="Riding bikes on big backcountry trails over several passes in a day. 
 #exploremontana #bikerides #outsideisfree #evoexplores  #endangeredsingletrack #wildernessculture #rideitnow}">
-          <span class-="thumbnail-caption-wrapper">
+          <span class="thumbnail-caption-wrapper">
             <span class="thumbnail-caption">
-              <span class="thumbnail-comments">4</span>
-              <span class="thumbnail-likes">23</span>
-              <span class="thumbnail-user">marc_obrien</span>
+              <span class="thumbnail-likes"><span class="icon-heart"></span><span class="thumbnail-label">23</span></span>
+              <span class="thumbnail-comments"><span class="icon-chat"></span><span class="thumbnail-label">4</span></span>
+              <span class="thumbnail-user">@marc_obrien</span>
             </span>
           </span>
         </a>
-        <a href="https://instagram.com/p/8whUNJREOy/" class="thumbnail-link">
+        <a href="https://scontent.cdninstagram.com/hphotos-xat1/t51.2885-15/s640x640/sh0.08/e35/12106072_470507293110875_1094874536_n.jpg" class="thumbnail-link" data-toggle="modal-image">
           <img src="https://scontent.cdninstagram.com/hphotos-xat1/t51.2885-15/s320x320/e35/12106072_470507293110875_1094874536_n.jpg" alt="All that climbing and hike-a-biking pays off when you drop off the other side of the pass.
 #10LakesMontana #exploremontana #montanatrails #montanamoment #earnyourturns #wildernessculture #wheremybiketookme #goldenhour #sustainabletrailscoalition #neverstopexploring #vscocam #vsco #mtblove #mountainbike #endangeredsingletrack}"  title="All that climbing and hike-a-biking pays off when you drop off the other side of the pass.
 #10LakesMontana #exploremontana #montanatrails #montanamoment #earnyourturns #wildernessculture #wheremybiketookme #goldenhour #sustainabletrailscoalition #neverstopexploring #vscocam #vsco #mtblove #mountainbike #endangeredsingletrack}">
-          <span class-="thumbnail-caption-wrapper">
+          <span class="thumbnail-caption-wrapper">
             <span class="thumbnail-caption">
-              <span class="thumbnail-comments">1</span>
-              <span class="thumbnail-likes">42</span>
-              <span class="thumbnail-user">marc_obrien</span>
+              <span class="thumbnail-likes"><span class="icon-heart"></span><span class="thumbnail-label">42</span></span>
+              <span class="thumbnail-comments"><span class="icon-chat"></span><span class="thumbnail-label">1</span></span>
+              <span class="thumbnail-user">@marc_obrien</span>
             </span>
           </span>
         </a>
-        <a href="https://instagram.com/p/8uLPpQREKd/" class="thumbnail-link">
+        <a href="https://scontent.cdninstagram.com/hphotos-xpt1/t51.2885-15/s640x640/sh0.08/e35/12145023_1672680342947708_1570782780_n.jpg" class="thumbnail-link" data-toggle="modal-image">
           <img src="https://scontent.cdninstagram.com/hphotos-xpt1/t51.2885-15/s320x320/e35/12145023_1672680342947708_1570782780_n.jpg" alt="Dropping off Wolverine Pass into Paradise Basin in 10 Lakes Montana. 
 The bicycle is a legitimate form of backcountry travel and shouldn't be excluded from far away wild places like this. 
 Let's keep it open and inclusive to all human powered users.
@@ -188,113 +200,107 @@ The bicycle is a legitimate form of backcountry travel and shouldn't be excluded
 Let's keep it open and inclusive to all human powered users.
 
 #endangeredsingletrack #fallriding #mountainbike #alpine #singletrack #exploremontana #goldenhour #10LakesMontana #montanawinseverytime #bikesbelong #wildernessculture #montanatrails #EveryTrailConnects #flatheadfattires #flatheadphotography @imba_us #sustainabletrailscoalition #outsideisfree}">
-          <span class-="thumbnail-caption-wrapper">
+          <span class="thumbnail-caption-wrapper">
             <span class="thumbnail-caption">
-              <span class="thumbnail-comments"></span>
-              <span class="thumbnail-likes">40</span>
-              <span class="thumbnail-user">marc_obrien</span>
+              <span class="thumbnail-likes"><span class="icon-heart"></span><span class="thumbnail-label">40</span></span>
+              <span class="thumbnail-comments"><span class="icon-chat"></span><span class="thumbnail-label"></span></span>
+              <span class="thumbnail-user">@marc_obrien</span>
             </span>
           </span>
         </a>
-        <a href="https://instagram.com/p/8tEGFnREN-/" class="thumbnail-link">
+        <a href="https://scontent.cdninstagram.com/hphotos-xta1/t51.2885-15/s640x640/sh0.08/e35/12132808_894660497253902_1576873852_n.jpg" class="thumbnail-link" data-toggle="modal-image">
           <img src="https://scontent.cdninstagram.com/hphotos-xta1/t51.2885-15/s320x320/e35/12132808_894660497253902_1576873852_n.jpg" alt="@cmcorah in the alpine zone of #10LakesMontana chasing light many many miles from the truck. .
 
 #endangeredsingletrack #wildernessculture #alpine #singletrack #fallriding #exploremontana #montanamoment #goldenhour #cyclingcameraclub #flatheadfattires}"  title="@cmcorah in the alpine zone of #10LakesMontana chasing light many many miles from the truck. .
 
 #endangeredsingletrack #wildernessculture #alpine #singletrack #fallriding #exploremontana #montanamoment #goldenhour #cyclingcameraclub #flatheadfattires}">
-          <span class-="thumbnail-caption-wrapper">
+          <span class="thumbnail-caption-wrapper">
             <span class="thumbnail-caption">
-              <span class="thumbnail-comments">3</span>
-              <span class="thumbnail-likes">26</span>
-              <span class="thumbnail-user">marc_obrien</span>
+              <span class="thumbnail-likes"><span class="icon-heart"></span><span class="thumbnail-label">26</span></span>
+              <span class="thumbnail-comments"><span class="icon-chat"></span><span class="thumbnail-label">3</span></span>
+              <span class="thumbnail-user">@marc_obrien</span>
             </span>
           </span>
         </a>
-        <a href="https://instagram.com/p/8r2nERRECN/" class="thumbnail-link">
+        <a href="https://scontent.cdninstagram.com/hphotos-xpt1/t51.2885-15/s640x640/sh0.08/e35/12093689_787157231411876_219401877_n.jpg" class="thumbnail-link" data-toggle="modal-image">
           <img src="https://scontent.cdninstagram.com/hphotos-xpt1/t51.2885-15/s320x320/e35/12093689_787157231411876_219401877_n.jpg" alt="Big backcountry day in #10LakesMontana. Lots of #alpine #singletrack and not a single person.
 
 #exploremontana #bikesbelong #endangeredsingletrack #wagonwheels  #heybear #mtblove #neverstopexploring}"  title="Big backcountry day in #10LakesMontana. Lots of #alpine #singletrack and not a single person.
 
 #exploremontana #bikesbelong #endangeredsingletrack #wagonwheels  #heybear #mtblove #neverstopexploring}">
-          <span class-="thumbnail-caption-wrapper">
+          <span class="thumbnail-caption-wrapper">
             <span class="thumbnail-caption">
-              <span class="thumbnail-comments"></span>
-              <span class="thumbnail-likes">26</span>
-              <span class="thumbnail-user">marc_obrien</span>
+              <span class="thumbnail-likes"><span class="icon-heart"></span><span class="thumbnail-label">26</span></span>
+              <span class="thumbnail-comments"><span class="icon-chat"></span><span class="thumbnail-label"></span></span>
+              <span class="thumbnail-user">@marc_obrien</span>
             </span>
           </span>
         </a>
-        <a href="https://instagram.com/p/8Hs0nqr4eJ/" class="thumbnail-link">
+        <a href="https://scontent.cdninstagram.com/hphotos-xtf1/l/t51.2885-15/s640x640/sh0.08/e35/11849801_902242046511086_873886884_n.jpg" class="thumbnail-link" data-toggle="modal-image">
           <img src="https://scontent.cdninstagram.com/hphotos-xtf1/l/t51.2885-15/s320x320/e35/11849801_902242046511086_873886884_n.jpg" alt="#fallcolors are #pictured here. #endangeredsingletrack #flatheadfattires #imba #montana #montanasingletrack}"  title="#fallcolors are #pictured here. #endangeredsingletrack #flatheadfattires #imba #montana #montanasingletrack}">
-          <span class-="thumbnail-caption-wrapper">
+          <span class="thumbnail-caption-wrapper">
             <span class="thumbnail-caption">
-              <span class="thumbnail-comments">1</span>
-              <span class="thumbnail-likes">18</span>
-              <span class="thumbnail-user">mtnman4life</span>
+              <span class="thumbnail-likes"><span class="icon-heart"></span><span class="thumbnail-label">18</span></span>
+              <span class="thumbnail-comments"><span class="icon-chat"></span><span class="thumbnail-label">1</span></span>
+              <span class="thumbnail-user">@mtnman4life</span>
             </span>
           </span>
         </a>
-        <a href="https://instagram.com/p/8Hsfodr4di/" class="thumbnail-link">
+        <a href="https://scontent.cdninstagram.com/hphotos-xpt1/t51.2885-15/s640x640/sh0.08/e35/11906255_464132443758776_1279929378_n.jpg" class="thumbnail-link" data-toggle="modal-image">
           <img src="https://scontent.cdninstagram.com/hphotos-xpt1/t51.2885-15/s320x320/e35/11906255_464132443758776_1279929378_n.jpg" alt="#adventurebiking in #tenlakes outside of Eureka, MT. Love me some #fallcolors "#notpictured". #flatheadfattires #endangeredsingletrack #imba #montanasingletrack #montana}"  title="#adventurebiking in #tenlakes outside of Eureka, MT. Love me some #fallcolors "#notpictured". #flatheadfattires #endangeredsingletrack #imba #montanasingletrack #montana}">
-          <span class-="thumbnail-caption-wrapper">
+          <span class="thumbnail-caption-wrapper">
             <span class="thumbnail-caption">
-              <span class="thumbnail-comments"></span>
-              <span class="thumbnail-likes">5</span>
-              <span class="thumbnail-user">mtnman4life</span>
+              <span class="thumbnail-likes"><span class="icon-heart"></span><span class="thumbnail-label">5</span></span>
+              <span class="thumbnail-comments"><span class="icon-chat"></span><span class="thumbnail-label"></span></span>
+              <span class="thumbnail-user">@mtnman4life</span>
             </span>
           </span>
         </a>
-        <a href="https://instagram.com/p/73MjUIv3c9/" class="thumbnail-link">
+        <a href="https://scontent.cdninstagram.com/hphotos-xap1/t51.2885-15/s640x640/sh0.08/e35/11856853_1687474734872284_932080722_n.jpg" class="thumbnail-link" data-toggle="modal-image">
           <img src="https://scontent.cdninstagram.com/hphotos-xap1/t51.2885-15/s320x320/e35/11856853_1687474734872284_932080722_n.jpg" alt="Looking into Antz Basin in the Boulder White Clouds.
 
 #mtb #endangeredsingletrack #bikesdontpoop #rideitwhileyoucan #ridewhereyoulove #lovewhereyouride #35mm #filmsnotdead #pentaxk1000}"  title="Looking into Antz Basin in the Boulder White Clouds.
 
 #mtb #endangeredsingletrack #bikesdontpoop #rideitwhileyoucan #ridewhereyoulove #lovewhereyouride #35mm #filmsnotdead #pentaxk1000}">
-          <span class-="thumbnail-caption-wrapper">
+          <span class="thumbnail-caption-wrapper">
             <span class="thumbnail-caption">
-              <span class="thumbnail-comments">2</span>
-              <span class="thumbnail-likes">38</span>
-              <span class="thumbnail-user">lockefromtheforest</span>
+              <span class="thumbnail-likes"><span class="icon-heart"></span><span class="thumbnail-label">38</span></span>
+              <span class="thumbnail-comments"><span class="icon-chat"></span><span class="thumbnail-label">2</span></span>
+              <span class="thumbnail-user">@lockefromtheforest</span>
             </span>
           </span>
         </a>
-        <a href="https://instagram.com/p/7trADHxELh/" class="thumbnail-link">
+        <a href="https://scontent.cdninstagram.com/hphotos-xft1/l/t51.2885-15/s640x640/sh0.08/e35/11850176_1497111387253522_860878404_n.jpg" class="thumbnail-link" data-toggle="modal-image">
           <img src="https://scontent.cdninstagram.com/hphotos-xft1/l/t51.2885-15/s320x320/e35/11850176_1497111387253522_860878404_n.jpg" alt="First ride of #larchfest2015 the other day in #10LakesMontana. Sub-alpine larch are golden right now. Rocky fun #singletrack miles from the truck off Wolverine Pass. #fallriding #endangeredsingletrack #mtblove #exploremontana #montanatrails #larchfest #montanawinseverytime #bikesarefun #EveryTrailConnects #getoutside}"  title="First ride of #larchfest2015 the other day in #10LakesMontana. Sub-alpine larch are golden right now. Rocky fun #singletrack miles from the truck off Wolverine Pass. #fallriding #endangeredsingletrack #mtblove #exploremontana #montanatrails #larchfest #montanawinseverytime #bikesarefun #EveryTrailConnects #getoutside}">
-          <span class-="thumbnail-caption-wrapper">
+          <span class="thumbnail-caption-wrapper">
             <span class="thumbnail-caption">
-              <span class="thumbnail-comments">4</span>
-              <span class="thumbnail-likes">23</span>
-              <span class="thumbnail-user">marc_obrien</span>
+              <span class="thumbnail-likes"><span class="icon-heart"></span><span class="thumbnail-label">23</span></span>
+              <span class="thumbnail-comments"><span class="icon-chat"></span><span class="thumbnail-label">4</span></span>
+              <span class="thumbnail-user">@marc_obrien</span>
             </span>
           </span>
         </a>
-        <a href="https://instagram.com/p/7rR4JKREGR/" class="thumbnail-link">
+        <a href="https://scontent.cdninstagram.com/hphotos-xtf1/t51.2885-15/s640x640/sh0.08/e35/11887020_812936065485867_1344716457_n.jpg" class="thumbnail-link" data-toggle="modal-image">
           <img src="https://scontent.cdninstagram.com/hphotos-xtf1/t51.2885-15/s320x320/e35/11887020_812936065485867_1344716457_n.jpg" alt="Ten Lakes Montana. Big rides with lots of vert, amazing views, and fun trails.
 
 #fallcolors #backcountry #alpine #mountainbike #flatheadcycling #endangeredsingletrack #10LakesMontana #mtblove #explore #bikeMontana #EveryTrailConnects #bikesbelong}"  title="Ten Lakes Montana. Big rides with lots of vert, amazing views, and fun trails.
 
 #fallcolors #backcountry #alpine #mountainbike #flatheadcycling #endangeredsingletrack #10LakesMontana #mtblove #explore #bikeMontana #EveryTrailConnects #bikesbelong}">
-          <span class-="thumbnail-caption-wrapper">
+          <span class="thumbnail-caption-wrapper">
             <span class="thumbnail-caption">
-              <span class="thumbnail-comments">1</span>
-              <span class="thumbnail-likes">24</span>
-              <span class="thumbnail-user">marc_obrien</span>
+              <span class="thumbnail-likes"><span class="icon-heart"></span><span class="thumbnail-label">24</span></span>
+              <span class="thumbnail-comments"><span class="icon-chat"></span><span class="thumbnail-label">1</span></span>
+              <span class="thumbnail-user">@marc_obrien</span>
             </span>
           </span>
         </a>
       </div>
     </section>
-    
-    <section id="map" class="section-map">
-      <!-- TRAILFORKS WIDGET START -->
-      <div class="TrailforksWidgetMap" data-w="800px" data-h="600px" data-rid="9279" data-maptype="terrain" data-trailstyle="difficulty" data-controls="1" data-list="0" data-dml="1" data-layers="labels,poi,directory,region" data-z="11" data-lat="48.9447984" data-lon="-114.9041314"></div>
-      <!-- <a href="http://www.trailforks.com/region/ten-lakes-scenic-recreation-area/">Ten Lakes Scenic Recreation Area</a> on <a href="http://www.trailforks.com/">Trailforks.com</a> -->
-      <script>
-        var script = document.createElement("script"); script.setAttribute("src", "//es.pinkbike.org/ttl-86400/sprt/j/trailforks/widget.js"); document.getElementsByTagName("head")[0].appendChild(script); var widgetCheck = false;
-      </script>
-    </section>
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="js/script.js" async></script>
+    <footer class="content-section">
+      Footer
+    </footer>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="js/script.js" async></script>
 </body>
 </html>

@@ -12,7 +12,8 @@
     "modal-extras" : "*",    
     "waypoints":"4.0.0",
     "hammerjs":"*",
-    "interact": "1.2.6"
+    "interact": "1.2.6",
+    "sticky-kit": "1.1.2"
     },
   "engine": "node >= 0.10"
 }
