@@ -26,7 +26,8 @@ module.exports = function(grunt) {
         options: {
           url: 'https://api.instagram.com/v1/tags/endangeredsingletrack/media/recent?client_id=56ff4ea444af496a97e5618b696a8644&count=12'
         },
-        dest: 'data/endangeredsingletrack.json'
+        dest: 'data/endange
+        redsingletrack.json'
       },
       tenlakes: {
         options: {
