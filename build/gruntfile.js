@@ -9,7 +9,7 @@ module.exports = function(grunt) {
     
     bake: {
       options: {
-        content: 'data/instagram.json'
+        content: 'data/10lakesmontana.json'
         //,
         //section: 'data'
       },
@@ -22,11 +22,17 @@ module.exports = function(grunt) {
 
 
     http: {
-      getJSON: {
+      endangeredsingletrack: {
         options: {
           url: 'https://api.instagram.com/v1/tags/endangeredsingletrack/media/recent?client_id=56ff4ea444af496a97e5618b696a8644&count=12'
         },
-        dest: 'data/instagram.json'
+        dest: 'data/endangeredsingletrack.json'
+      },
+      tenlakes: {
+        options: {
+          url: 'https://api.instagram.com/v1/tags/10lakesmontana/media/recent?client_id=56ff4ea444af496a97e5618b696a8644&count=12'
+        },
+        dest: 'data/10lakesmontana.json'
       }
     },
 
@@ -172,14 +178,7 @@ module.exports = function(grunt) {
           livereload : true
         }
       }
-      // ,
-      // "set2html" : {
-      //   files : ['../index.html'],
-      //   //tasks : ['less:development', 'postcss'],
-      //   options : {
-      //     livereload : true
-      //   }
-      // }
+      
     }    
   });
 
@@ -194,7 +193,7 @@ module.exports = function(grunt) {
   // build tasks that build to production will use (runs all minification, uglifications, etc.) 
 
   grunt.registerTask('default', ['bake:build', 'less:development', 'postcss', 'concat',  'watch']);
-  grunt.registerTask('remote', ['http', 'default']);
+  grunt.registerTask('fetchData', ['http', 'default']);
   grunt.registerTask('deploy', ['bower', 'less:production', 'postcss', 'concat', 'uglify']);
 
 };
