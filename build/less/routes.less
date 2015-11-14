@@ -4,15 +4,95 @@
 }
 
 .route-container {
-  display: flex;
-  flex-wrap: wrap;
+
+  padding: 0;
+  border-bottom: 1px solid @color-dark;
+  @media (min-width: @screen-md) {
+   display: flex;
+   flex-wrap: wrap;
+   border-bottom: none;
+ }
 }
 
 .route-column {
-
+  border-top: 1px solid @color-dark;
   width: 100%;
-  padding: @grid-gutter-width/2;
-  @media (min-width: @screen-sm) {
+  padding: 0 @grid-gutter-width/2;
+  @media (min-width: @screen-xs) {
+    border-top: none;
+    margin-bottom: @vertical-margin-base;
+  }
+
+   @media (min-width: @screen-md) {
     width: 33%;
   }
+}
+
+.route-header {
+  padding-top: .5em;
+  padding-bottom: .5em;
+  padding-right: 40px;
+  margin: 0;
+  font-size: 1rem;
+
+  @media (max-width: ( @screen-xs - 1)) {
+    position: relative;
+    padding-right: 40px;
+    &:after,
+    &:before {
+      content: '';
+      background: @color-dark;
+      width: 16px;
+      height: 1px;
+      position: absolute;
+      right: @grid-gutter-width/2;
+      top:~"calc(50% - 1px)";
+      transition: all .3s ease-out;
+    }
+
+    &:after {
+      transform: rotate(90deg);
+    }
+  }
+
+  @media (min-width: @screen-xs) {
+    font-size: 1.2rem;
+  }
+}
+
+.route-header.active {
+  &:before {
+    transform: rotate(135deg);
+  }
+
+  &:after {
+    transform: rotate(225deg);
+  }
+}
+
+
+.route-contents {
+  display: none;
+
+  p {
+    margin-top: 0;
+  }
+  @media (min-width: @screen-xs) {
+    display: flex !important;
+  }
+
+  @media (min-width: @screen-md) {
+    display: block !important;
+  }
+}
+
+@media (min-width: @screen-xs) and (max-width: (@screen-md - 1)) {
+.route-data {
+  width: 34%;
+  padding-right: 15px;
+}
+
+.route-copy {
+  width: 66%;
+}
 }

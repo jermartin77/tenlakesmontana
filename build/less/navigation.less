@@ -1,8 +1,16 @@
+
 .navigation {
  background: @color-bg;
  z-index: @z-index-navigation;
  padding-top: .5em;
  padding-bottom: .5em;
+ position: absolute;
+ transform: translate3d(0,0,0);
+ width: 100%;
+
+ &.is_stuck {
+   background: fadeout(@color-bg, 8%);
+ }
 }
 .navigation-list {
   list-style-type: none;
@@ -13,11 +21,19 @@
 }
 
 .navigation-link {
+  font-size: .8rem;
   display: block;
   line-height: 1em;
   text-transform: uppercase;
   text-decoration: none;
   font-family: @font-family-sans;
   padding: .5em;
+  @media (min-width: @screen-sm) {
+     font-size: 1rem;
+  }
+
+  &.active {
+    color: #fff;
+  }
 }
 

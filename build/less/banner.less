@@ -1,29 +1,47 @@
 .section-banner {
   position: relative;
   z-index: @z-index-banner;
-  height: ~"calc(100vh - 3rem)";
+   height: ~"calc(100vh - 110px)";
+  @media (min-width: @screen-sm) {
+    height: ~"calc(100vh - 3rem)";
+  }
 }
 
 .banner-header {
   width: 100%;
   position: absolute;
-  top: 50%;
-  margin-top: -3.6vw;
+  top: 36.46%;
+  //margin-top: -3.6vw;
   left: 0;
+  padding-right:  @grid-gutter-width;
+  padding-right:  @grid-gutter-width;
   z-index: @z-index-banner-header;
   text-align: center;
   @media (max-width: 580px) {
     margin-top: -50px;
   }
 
+  @media (min-width: @screen-sm) {
+    position: fixed;
+  }
+
 }
 
 
 .banner-image {
-  position: fixed;
   width: 100%;
   top: 0;
   opacity: .75;
+  height: ~"calc(100vh - 2.9rem)";
+  background: url(../images/gallery/theriault-pass-lg.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  height: ~"calc(100vh - 50px)";
+  
+  @media (min-width: @screen-sm) {
+    position: fixed;
+    height: ~"calc(100vh - 2.9rem)";
+  }
+
 }
 
 .banner-title,
@@ -67,7 +85,7 @@
   font-size: 1.8vw;
   font-weight: 700;
   font-style: italic;
-   @media (max-width: 768px) {
-      font-size: 14px;
-    }
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 }
